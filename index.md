@@ -19,7 +19,7 @@ page_sections:
     link_text: Blocks
   cta:
     url: ''
-    button_text: ''
+    button_text: blah
 - template: hero-banner-w-image
   block: hero-2
   slug: features
