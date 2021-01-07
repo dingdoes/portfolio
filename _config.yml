@@ -11,5 +11,6 @@ defaults:
   values:
     layout: default
 plugins:
+- color-picker
 - jekyll-feed
 - jekyll-menus
