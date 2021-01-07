@@ -34,3 +34,10 @@ fields:
     wysiwyg: true
     schema:
       format: html
+- name: colour_picker
+  type: color
+  label: Colour Picker
+  config:
+    required: false
+    color_format: Hex
+  description: Pick some colours
