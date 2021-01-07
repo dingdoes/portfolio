@@ -23,7 +23,7 @@ page_sections:
 - template: hero-banner-w-image
   block: hero-2
   slug: features
-  headline: Hello I'm <br><strong>Amanda Ding</strong>!<br>
+  headline: Hello! I'm <br><strong>Amanda Ding</strong><br>
   content: I'm a product designer based in Ottawa, ON. Currently @ <a href="http://llettonna.com">lleTTonna</a>.
   cta:
     enabled: true
