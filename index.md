@@ -23,8 +23,8 @@ page_sections:
 - template: hero-banner-w-image
   block: hero-2
   slug: features
-  headline: Hello! I'm Amanda Ding<br>I love shapes and having a good time. Always
-    committed to creating pleasant digital solutions.
+  headline: Hello! I'm Amanda Ding<br>I'm a product designer based in Ottawa, ON.
+    Currently @<a href="http://llettonna.com">lleTTonna</a>.
   content: The tool that allows you to build beautiful sites<br>all inside Forestry's
     content manager.
   cta:
