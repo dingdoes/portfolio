@@ -31,6 +31,13 @@ fields:
   - signup-bar
   - simple-footer
   - 4-column-footer
+- name: colour_picker
+  type: color
+  label: Colour Picker
+  config:
+    required: false
+    color_format: Hex
+  description: Pick some colours
 pages:
 - index.md
 - test2.md
