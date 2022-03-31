@@ -74,5 +74,3 @@ Runner.run(runner, engine);
 
   // keep the mouse in sync with rendering
   render.mouse = mouse;
-
-  

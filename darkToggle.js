@@ -6,10 +6,11 @@ document.getElementById("toggle").addEventListener("click", function(){
 //toggle headline highlight
 document.getElementById("gravity").addEventListener("click", function(){
 
-Body.setStatic(greetBox, false);
-console.log(greetBox.isStatic);
-if (greetBox.isStatic) {
-  Body.setStatic(greetBox, true);
-  console.log('ping2');
-}
+  Body.setStatic(greetBox, false);
+  console.log(greetBox.isStatic);
+
+  if (greetBox.isStatic) {
+    Body.setStatic(greetBox, true);
+    console.log('ping2');
+    }
 });

@@ -32,7 +32,6 @@ img{
 nav {
   position: absolute;
   top: 1%;
-  margin-right: auto;
   margin-left: auto;
   align-content: center;
 }
@@ -44,13 +43,17 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-top: 1.3em;
+  margin-left: -8em;
 }
 
 li {
+  margin-top: 1.3em;
   padding-left: 2rem;
   letter-spacing: 0;
   text-align: center;
   white-space: nowrap;
+
 }
 
  li a{
@@ -64,7 +67,7 @@ li {
    background-color: #000; /*white*/
    margin-left: 70em;
    padding-right: 3em;
-   margin-top: -1.75rem;
+   margin-top: -0.5rem;
  }
 
 .headline{
@@ -252,7 +255,7 @@ div.card {
   border-color: #1A49F1; /*border colour*/
 }
 
-.dark-theme nav a:hover, #home:hover{
+.dark-theme nav a:hover, .dark-theme #home:hover{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #e5d;
 }
