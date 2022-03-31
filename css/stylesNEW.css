@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+  
 }
 
 body{
@@ -239,6 +239,10 @@ div.card {
     color: #e5e5e5; /*font color*/
 }
 
+.dark-theme nav a{
+  color: #e5d:
+}
+
 .dark-theme .card{
     border-color: #1A49F1; /*border colour*/
 }
@@ -247,9 +251,9 @@ div.card {
   border-color: #1A49F1; /*border colour*/
 }
 
-.dark-theme nav a:hover{
+.dark-theme nav a:hover, #home:hover{
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #FFF;
+  -webkit-text-stroke-color: #e5d;
 }
 .dark-theme #toggle{
     background-color: #1D2330; /*toggle colour: dark blue*/
