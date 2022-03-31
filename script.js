@@ -27,13 +27,13 @@ var render = Render.create({
 });
 
 //biggen the canvas
-render.canvas.width = window.innerWidth
-render.canvas.height = window.innerHeight
+render.canvas.width = window.outerWidth
+render.canvas.height = window.outerHeight
 console.log("hieght: " + window.innerHeight);
 // create two boxes and a ground
 var boxA = Bodies.rectangle(400, 200, 80, 80);
 var boxB = Bodies.rectangle(450, 50, 80, 80);
-var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+var ground = Bodies.rectangle(400, 610, window.outerWidth, 60, { isStatic: true });
 var greetBox = Bodies.rectangle(445, 190, 650, 100, {
   isStatic: true,
   render: {
@@ -47,7 +47,7 @@ if (greetBox.isSleeping == true) {
 
 
 // add all of the bodies to the world
-Composite.add(engine.world, [greetBox]);
+Composite.add(engine.world, greetBox);
 
 // run the renderer
 Render.run(render);
@@ -74,19 +74,3 @@ Runner.run(runner, engine);
 
   // keep the mouse in sync with rendering
   render.mouse = mouse;
-
-  //dark mode toggle
-  document.getElementById("toggle").addEventListener("click", function(){
-    document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
-});
-
-//toggle headline highlight
-document.getElementById("gravity").addEventListener("click", function(){
-
-  Body.setStatic(greetBox, false);
-  console.log(greetBox.isStatic);
-  if (greetBox.isStatic) {
-    Body.setStatic(greetBox, true);
-    console.log('ping2');
-  }
-});

@@ -52,7 +52,7 @@ h1 {
   display: flex;
   align-items: center;
   z-index: 0;
-  /*color: #000;*/
+  color: #000;
 }
 
 h2 {
@@ -211,7 +211,7 @@ div.card {
   border-color: #1A49F1; /*border colour*/
 }
 
-.dark-theme #home a:hover{
+.dark-theme #nav a:hover{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFF;
 }
