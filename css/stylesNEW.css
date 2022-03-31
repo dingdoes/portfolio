@@ -1,16 +1,17 @@
 html {
-  
+
 }
 
 body{
   transition: ease-in-out background 0.4s;
+  background-image: url("../images/grid-bg.png");
+  background-size: 1440px;
+
 }
 
 body.main{
   margin: 0;
   padding: 0;
-  background-image: url("../images/grid-bg.png");
-  background-size: 1440px;
 }
 
 *{
