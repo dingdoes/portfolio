@@ -5,6 +5,7 @@ html {
 body{
   transition: ease-in-out background 0.4s;
   background-image: url("../images/grid-bg.png");
+  min-height: 1000px;
   background-size: 1440px;
 
 }
@@ -32,7 +33,7 @@ img{
 nav {
   position: absolute;
   top: 1%;
-  margin-left: auto;
+  margin-left: 0;
   align-content: center;
 }
 
@@ -72,26 +73,27 @@ li {
 
 .headline{
   position: absolute;
-  width: 650px;
-  height: 100px;
-  left: 113px;
-  top: 160px;
-  /*background-color: #79EDED; /* cyan */
+  display: inline-block;
+  width: 100%;
+
+  left: 8%;
+  top: 17.5%;
+
 
 }
 
 h1 {
-  position: absolute;
-  width: 716px;
-  height: 80px;
-  left: 0.3em;
-  top: -0.5em;
+  position:relative;
+  margin: 1px 0 0 0;
+  width: 710px;
+  padding: 0 0.5em;
+  background-color: #79EDED; /* cyan */
 
   font-style: normal;
   font-weight: 800;
   font-size: 72px;
   line-height: 80px;
-  display: flex;
+
   align-items: center;
   z-index: 0;
   color: #000;
@@ -99,16 +101,13 @@ h1 {
 
 h2 {
   position: absolute;
-  width: 976px;
+  width: auto;
   height: 40px;
-  left: 3.2em;
-  top: 7.1em;
-
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  display: flex;
+
   align-items: center;
 }
 
@@ -271,4 +270,68 @@ div.card {
     top: -3px;
     left: 23px;
     border-color: #FFF;
+}
+
+@media only screen and (max-width: 420px){
+  .headline{
+    left: 1em;
+
+    overflow-wrap: normal;
+  }
+
+  h1 {
+    font-size: 56px;
+    width: 75%;
+    line-height: normal;
+    margin: 0;
+    padding: 0 0.5em 0 0.3em;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: normal;
+  }
+
+}
+
+@media only screen and (min-width: 1280px){
+  .headline{
+    position: absolute;
+    width: 650px;
+    height: 100px;
+    left: 113px;
+    top: 160px;
+    /*background-color: #79EDED; /* cyan */
+
+  }
+
+  h1 {
+
+    width: 716px;
+    height: 80px;
+    margin: 0 0 0 0;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 80px;
+
+    align-items: center;
+    z-index: 0;
+    color: #000;
+  }
+
+  h2 {
+
+    width: 976px;
+    height: 40px;
+
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+  }
 }

@@ -47,7 +47,7 @@ if (greetBox.isSleeping == true) {
 
 
 // add all of the bodies to the world
-Composite.add(engine.world, greetBox);
+//Composite.add(engine.world, greetBox);
 
 // run the renderer
 Render.run(render);
